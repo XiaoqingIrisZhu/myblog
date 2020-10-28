@@ -1,9 +1,11 @@
 ---
 layout: page
-title: films
+title: Films
 ---
 
-{% for movie in site.fimls %}
-<h2>{{ movie.artist }}: {{ movie.title}} ({{ movie.year }})</h2>
-<img src="{{ movie.image }}" alt="{{ movie.actor }}: {{ movie.title}}">
+{% for films in site.films %}
+    <a href="{{ films.url }}">
+    <h2>{{ films.actors }}: {{ films.title}} ({{ films.year }})</h2>
+    <img src="{{ films.image }}" width=300 heigth=400 alt="{{ films.actors }}: {{ films.title}}">
+    </a>
 {% endfor %}
