@@ -1,0 +1,11 @@
+---
+layout: page
+title: Films
+---
+
+{% for films in site.data.films %}
+ <p>{{ films.name }}</p>
+
+{% else %}
+<p>Lost your way!</p>
+{% endfor %}

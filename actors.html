@@ -1,0 +1,9 @@
+---
+layout: page
+title: films
+---
+
+{% for movie in site.fimls %}
+<h2>{{ movie.artist }}: {{ movie.title}} ({{ movie.year }})</h2>
+<img src="{{ movie.image }}" alt="{{ movie.actor }}: {{ movie.title}}">
+{% endfor %}
