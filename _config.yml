@@ -55,7 +55,3 @@ plugins:
 collections:
   films:
     output: true
-
-collections:
-  achieves:
-    output: true
