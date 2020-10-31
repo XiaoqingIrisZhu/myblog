@@ -3,9 +3,9 @@ layout: page
 title: List of Films
 ---
 
-{% for films in site.data.films %}
- <p>{{ films.name }}</p>
+{% for films in site.films %}
+  <p>{{ films.title }}</p>
 
 {% else %}
-<p>Lost your way!</p>
+  <p>Lost your way!</p>
 {% endfor %}

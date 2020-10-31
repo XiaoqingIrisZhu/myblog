@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Films
+title: films
 ---
 
-{% for films in site.data.films %}
-    <a href="{{ films.url }}">
+{% for films in site.films %}
+  <a href="{{ films.url }}">
     <h2>{{ films.actors }}: {{ films.title }} ({{ films.year }})</h2>
     <img src="{{ films.image }}" width=300 heigth=400 alt="{{ films.actors }}: {{ films.title }}">
-    </a>
+  </a>  
 {% endfor %}
