@@ -9,10 +9,8 @@ title: Chinese artists
     
     
     {% for i in (1..3) %}
-    <img src=/media/china-artworks/{{ artists.EnglishName | replace: " ", "_"}}_{{ artists.ChineseName }}/{{ artists.EnglishName | replace: " ", "_"}}_0{{i}}.jpg>
+    <img src="/media/china-artworks/{{ artists.EnglishName | replace: " ", "_"}}_{{ artists.ChineseName }}/{{ artists.EnglishName | replace: " ", "_"}}_0{{i}}.jpg">
 
-    {% else %}
-    <img src=/media/china-artworks/{{ artists.EnglishName | replace: " ", "_"}}/{{ artists.EnglishName | replace: " ", "_"}}_0{{i}}.jpg>
     {% endfor %}
 
 {% endfor %}
